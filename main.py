@@ -1,3 +1,6 @@
+import math
+
+
 print("Ej1")
 a = 5
 b = 7
@@ -52,3 +55,37 @@ numero = 30
 print(f"El numero {numero} es multiplo de 3: {numero % 3 == 0}")
 print(f"El numero {numero} es multiplo de 5: {numero % 5 == 0}")
 print(f"El numero {numero} es multiplo de 7: {numero % 7 == 0}")
+
+print("Ej7")
+lado = 7
+print(f"Perimetro: {lado*4} Area: {lado*lado}")
+base = 5
+altura = 10
+print(f"Area: {base*altura/2}")
+cateto1 = 4
+cateto2 = 5
+hipotenusa = math.sqrt((cateto1 ** 2) + (cateto2 ** 2))
+print(f"Hipotenusa: {hipotenusa}")
+
+print("Ej8")
+producto = "Nintendo Switch"
+precioUnitario = 200
+unidades = 500000
+impuestoPorcentaje = 21
+
+subtotal = precioUnitario * unidades
+dineroImpuestos = subtotal * (impuestoPorcentaje / 100)
+preciototal = subtotal + dineroImpuestos
+print(f"Producto: {producto}")
+print(f"Precio unitario: {precioUnitario} euros")
+print(f"Unidades: {unidades}")
+print(f"Subtotal: {subtotal} euros")
+print(f"Impuestos: {impuestoPorcentaje}%")
+print(f"Precio total: {preciototal} euros")
+
+print("Ej9")
+secs = 10240
+
+min = secs / 60
+h = secs / 3600
+print(f"{secs} segundos son: {min} minutos. {h} horas")
