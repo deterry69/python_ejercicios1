@@ -93,8 +93,8 @@ if nombre in diccionario:
 print("Ej17")
 diccionario = {'Cyndaquil': 1234, 'Totodile': 5678, 'Chikorita': 9101, 'Hoothoot': 1123, 'Ledyba': 1314}
 nombre = input('Introduce nombre: ')
-contrasena = input('Introduce la contraseña')
-if nombre and contrasena in diccionario[nombre] == contrasena:
+contrasena = input('Introduce la contraseña: ')
+if nombre in diccionario and int(contrasena) == diccionario[nombre]:
     print('Login correcto')
 else:
     print('Login incorrecto')
