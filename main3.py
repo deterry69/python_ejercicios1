@@ -96,7 +96,7 @@ nombre = input('Introduce nombre: ')
 contrasena = input('Introduce la contraseña: ')
 if nombre in diccionario and int(contrasena) == diccionario[nombre]:
     print('Login correcto')
-else:
+else:   
     print('Login incorrecto')
 
 
