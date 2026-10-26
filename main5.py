@@ -143,3 +143,24 @@ dict = {
 
 for i in dict:
     print(f'{i} : {dict[i] * 1.21}€')
+
+    print('Ej18')
+
+dict = {
+    'Julian': 2001,
+    'Manuel': 2015,
+    'Daniel': 1993,
+    'Roberto': 2000,
+    'Alfonso': 2006
+}
+
+acc_adult = 0
+acc_underage = 0
+    
+for name in dict:
+    if 2026 - dict[name] >= 18:
+        acc_adult += 1
+    else:
+        acc_underage += 1
+print(f'Adultos: {acc_adult}')
+print(f'Undereage: {acc_underage}')
